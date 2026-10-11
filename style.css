@@ -128,7 +128,13 @@ h4 { font-size: 1.08rem; font-weight: 600; }
   background: linear-gradient(150deg, var(--plum) 0%, var(--plum-deep) 55%, #7a2448 100%);
   display: grid; place-items: center;
 }
-.portrait img { width: 100%; height: 100%; object-fit: cover; }
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
 .portrait-initials { font-family: var(--serif); font-size: 6rem; font-weight: 700; color: rgba(255,255,255,.9); letter-spacing: .02em; }
 .hero-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.25rem; }
 .hero-tags li {
@@ -157,11 +163,42 @@ h4 { font-size: 1.08rem; font-weight: 600; }
 /* ===== Cards ===== */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .card {
-  background: var(--white); border-radius: var(--radius); padding: 2rem;
+  background: var(--white); border-radius: var(--radius); padding: 0;
+  overflow: hidden;
   box-shadow: var(--shadow); transition: transform .3s ease, box-shadow .3s ease;
   border-top: 4px solid transparent;
+  display: flex; flex-direction: column;
 }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-top-color: var(--coral); }
+.card-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--sand);
+}
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .45s ease;
+}
+.card-media--duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  background: var(--line);
+}
+.card-media--duo img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+}
+.card:hover .card-media img { transform: scale(1.04); }
+.card:hover .card-media--duo img { transform: none; }
+.card:hover .card-media--duo img:hover { transform: scale(1.05); }
+.card-body { padding: 1.5rem 1.75rem 1.85rem; flex: 1; }
 .card-icon {
   width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
   background: linear-gradient(135deg, rgba(232,96,76,.15), rgba(242,165,65,.2));

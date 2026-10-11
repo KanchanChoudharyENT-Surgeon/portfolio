@@ -33,9 +33,7 @@ git push -u origin main
 ```
 
 ## Easy edits
-- **Add a photo:** save a portrait as `photo.jpg` here, then in `index.html` replace
-  `<span class="portrait-initials">KC</span>` with
-  `<img src="photo.jpg" alt="Dr. Kanchan Chaudhary" />`.
+- **Photo:** hero uses `photo.jpg` (lab-coat portrait). Replace that file to update.
 - **LinkedIn:** the resume mentions LinkedIn but the URL wasn't in the PDF; add a link
   in the contact section once known.
 - **Kauvery start date:** the timeline shows "Present"; add the month she joined.
