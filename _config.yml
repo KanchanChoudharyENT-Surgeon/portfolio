@@ -1,0 +1,75 @@
+# ============================================================
+# Dr. Kanchan Chaudhary — Jekyll / GitHub Pages config
+# Compatible with: minima (default GH Pages theme) or AcademicPages
+# ============================================================
+
+title: "Dr. Kanchan Chaudhary"
+tagline: "ENT, Cochlear Implant & Vertigo Specialist · Bengaluru"
+description: >-
+  Consultant ENT surgeon at Kauvery Hospital, Bengaluru.
+  MBBS, MS (ENT & Head and Neck Surgery), Fellowship in Neuro-Otology
+  (Cochlear Implant & Vertigo).
+author:
+  name: "Dr. Kanchan Chaudhary"
+  email: "kc88222@gmail.com"
+  phone: "+91 99570 91193"
+
+# --- Theme ---
+# Option A — built-in GitHub Pages theme (no gem install needed):
+theme: minima
+# Option B — AcademicPages (fork https://github.com/academicpages/academicpages.github.io
+#           then replace this file with theirs and merge the author fields below)
+
+# Minima / common site settings
+baseurl: ""
+url: "https://YOUR-USERNAME.github.io"
+# If the repo is NOT named USERNAME.github.io, set:
+#   baseurl: "/ent-surgeon-portfolio"
+#   url: "https://YOUR-USERNAME.github.io"
+
+lang: en
+timezone: Asia/Kolkata
+permalink: pretty
+
+# Navigation (minima reads this for the header)
+header_pages:
+  - index.md
+
+# Social / academic profiles (add real URLs when available)
+social:
+  name: "Dr. Kanchan Chaudhary"
+  links:
+    - "mailto:kc88222@gmail.com"
+    # - "https://www.linkedin.com/in/YOUR-SLUG"
+    # - "https://www.researchgate.net/profile/YOUR-SLUG"
+    # - "https://www.doximity.com/pub/YOUR-SLUG"
+
+minima:
+  social_links:
+    - platform: email
+      user_url: "mailto:kc88222@gmail.com"
+
+# Plugins allowed on GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude build / editor noise
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+      author: "Dr. Kanchan Chaudhary"
