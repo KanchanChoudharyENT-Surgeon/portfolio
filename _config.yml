@@ -21,11 +21,10 @@ theme: minima
 #           then replace this file with theirs and merge the author fields below)
 
 # Minima / common site settings
-baseurl: ""
-url: "https://YOUR-USERNAME.github.io"
-# If the repo is NOT named USERNAME.github.io, set:
-#   baseurl: "/ent-surgeon-portfolio"
-#   url: "https://YOUR-USERNAME.github.io"
+# Live site: https://kanchanchoudharyent-surgeon.github.io/portfolio/
+# (repo is a *project* site named `portfolio`, not USERNAME.github.io)
+url: "https://kanchanchoudharyent-surgeon.github.io"
+baseurl: "/portfolio"
 
 lang: en
 timezone: Asia/Kolkata
